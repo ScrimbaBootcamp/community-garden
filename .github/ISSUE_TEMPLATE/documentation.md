@@ -9,8 +9,8 @@ assignees: ''
 
 Will you make a change to:
 
--[ ] the README
--[ ] our CONTRIBUTING guidelines
--[ ] the Code of Conduct
--[ ] our licensing
--[ ] something else (describe below)
+- [ ] the README
+- [ ] our CONTRIBUTING guidelines
+- [ ] the Code of Conduct
+- [ ] our licensing
+- [ ] something else (describe below)
