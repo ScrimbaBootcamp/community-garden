@@ -14,3 +14,5 @@ Will you make a change to:
 - [ ] the Code of Conduct
 - [ ] our licensing
 - [ ] something else (describe below)
+
+<!-- To check one of these, remove the SPACE character between the square brackets, and replace it with the letter 'x' -->
