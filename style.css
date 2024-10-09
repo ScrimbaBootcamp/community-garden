@@ -1,0 +1,124 @@
+:root {
+    font-size: 20px;
+    --background: rgb(4, 172, 91);
+    --container-bg: rgb(237, 248, 243);
+    --accent: rgb(218, 35, 35);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 1.1rem;
+    margin: 0;
+    background-color: var(--background);
+    color: var(--accent);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.24rem;
+}
+
+h1, h2 {
+    color: var(--container-bg);
+}
+
+header,
+main,
+section,
+footer {
+    width: 100%;
+    padding: 1em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+li a {
+    color: inherit;
+}
+
+a {
+    text-underline-offset: 3px;
+    color: inherit;
+    padding: 0.2em;
+}
+
+.container li a:hover,
+.container li a:focus {
+    background-color: var(--accent);
+    color: var(--container-bg);
+}
+
+.container {
+    background-color: var(--container-bg);
+    color: var(--accent);
+    padding: .2em;
+    border-radius: 10px;
+}
+
+.container a {
+    color: inherit;
+}
+
+.inner {
+    border-radius: 8px;
+    border: 3px solid var(--accent);
+    padding: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (min-width: 700px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header,
+    main,
+    section,
+    footer {
+        width: 100%;
+        padding: 1.4em;
+    }
+
+    h1 {
+        font-size: 4vw;
+        padding-bottom: 0.4rem;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    } 
+}
