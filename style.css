@@ -64,7 +64,7 @@ ul {
 
 li a {
     color: inherit;
-    text-decoration: none; /* Removed default underline */
+    text-decoration: underline; /* Underlined links */
 }
 
 a {
@@ -91,6 +91,7 @@ a {
 
 .container a {
     color: inherit;
+    text-decoration: underline; /* Ensures links are underlined */
 }
 
 .inner {
