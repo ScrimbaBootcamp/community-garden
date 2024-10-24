@@ -3,10 +3,13 @@
     --background: rgb(4, 172, 91);
     --container-bg: rgb(237, 248, 243);
     --accent: rgb(218, 35, 35);
+    --hover-accent: rgb(255, 79, 79); /* Added for hover effects */
 }
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
@@ -14,13 +17,14 @@ html, body {
     margin: 0;
     background-color: var(--background);
     color: var(--accent);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Added Georgia and Times New Roman */
+    line-height: 1.6; /* Improved readability */
 }
 
 img {
     max-width: 100%;
+    height: auto;
 }
-
 
 .flex {
     display: flex;
@@ -30,11 +34,13 @@ img {
 }
 
 h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+    letter-spacing: 1.5px; /* Added letter spacing for style */
 }
 
 h2 {
-    font-size: 1.24rem;
+    font-size: 1.4rem;
 }
 
 h1, h2 {
@@ -46,7 +52,7 @@ main,
 section,
 footer {
     width: 100%;
-    padding: 1em;
+    padding: 1.2em;
 }
 
 ul {
@@ -58,38 +64,48 @@ ul {
 
 li a {
     color: inherit;
+    text-decoration: underline; /* Underlined links */
 }
 
 a {
     text-underline-offset: 3px;
     color: inherit;
     padding: 0.2em;
+    transition: all 0.3s ease-in-out; /* Added transition for hover effect */
 }
 
 .container li a:hover,
 .container li a:focus {
-    background-color: var(--accent);
+    background-color: var(--hover-accent);
     color: var(--container-bg);
+    border-radius: 5px; /* Added smooth border-radius on hover */
 }
 
 .container {
     background-color: var(--container-bg);
     color: var(--accent);
-    padding: .2em;
+    padding: 1em;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
 }
 
 .container a {
     color: inherit;
+    text-decoration: underline; /* Ensures links are underlined */
 }
 
 .inner {
     border-radius: 8px;
     border: 3px solid var(--accent);
-    padding: 1.2em;
+    padding: 1.4em;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    transition: all 0.2s ease; /* Smooth transition for the inner container */
+}
+
+.inner:hover {
+    border-color: var(--hover-accent);
 }
 
 @media (min-width: 700px) {
@@ -118,7 +134,22 @@ a {
 
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2em;
-    } 
+        grid-template-columns: repeat(2, 1fr); /* Adjusted to make use of available space */
+        gap: 2.5em; /* Increased gap for spacing */
+    }
+}
+
+/* Additional styles for larger screens */
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    }
+
+    h1 {
+        font-size: 3vw;
+    }
+
+    h2 {
+        font-size: 2vw;
+    }
 }
