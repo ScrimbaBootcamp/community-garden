@@ -62,7 +62,7 @@ You will then create changes to stage, commit, push, and have merged. Once your 
 
 ### Keep your branch up to date
 Because we have multiple contributors who may be working on changes simultaneously, it is possible that we will encounter merge conflicts. This happens when changes have been made on the same line(s) in the same file(s) from two or more branches. It isn't always possible to avoid this, however, you can reduce the chances of this by syncing your branch with the upstream repository _before_ pushing your own changes upstream. To do this, first pull the changes to your branch.  In the terminal, enter:\
-`git pull upstream main`\
+`git pull upstream main`
 
 Then you can continue in the git workflow: checkout -> add -> commit -> push -> pull -> and so on.
 <!-- [syncing a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) -->
@@ -70,7 +70,7 @@ Then you can continue in the git workflow: checkout -> add -> commit -> push -> 
 ## Stage, commit, and push changes that you make
 ### Staging - `git add`
 The `git add` command stages adds new or changed files to the staging area. You cannot commit files without first staging them. You can commit files individually, for example:\
-`git add CONTRIBUTING.md`\
+`git add CONTRIBUTING.md`
 If you have made changes in multiple files, you can stage them all at once though, like this:\
 `git add .`
 ### Commiting - `git commit`
